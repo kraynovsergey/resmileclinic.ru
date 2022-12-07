@@ -1,0 +1,51 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	background: $color_white;
+	font-family: 'PT Root UI';
+	color: $color_black;
+	font-weight: normal;
+	font-style: normal;
+
+	&._beige {
+		background: $color_beige;
+	}
+}
+
+body * {
+  outline: none !important;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+a,
+svg,
+path,
+rect,
+circle,
+button,
+span,
+::before,
+::after {
+	transition: $transition;
+}
+
+button {
+	border-radius: 0;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	color: inherit;
+}
+
+.svg {
+	display: none;
+}

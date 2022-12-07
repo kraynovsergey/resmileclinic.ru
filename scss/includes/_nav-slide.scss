@@ -1,0 +1,139 @@
+.nav-slide {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -100vh;
+	background: $color_beige;
+	padding: 40px 0 100px;
+	overflow-y: auto;
+	transition: $transition;
+	z-index: 3;
+
+	&._active {
+		top: 100%;
+
+		& + .nav-slide__overlay {
+			position: absolute;
+			left: 0;
+			top: 95px;
+			right: 0;
+			bottom: 0;
+			background: rgba(0,0,0,.4);
+			height: calc(100vh - 95px);
+			z-index: 2;
+		}
+	}
+
+	&::-webkit-scrollbar {
+		width: 0 !important;
+		height: 0 !important;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		& > li {
+			margin-bottom: 25px;
+			font-weight: bold;
+			display: flex;
+			flex-direction: column;
+			max-width: 210px;
+			min-width: 210px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&._parent {
+				&:hover {
+					& > ul {
+						top: 0;
+					}
+				}
+
+				& > a {
+					&::after {
+						content: '';
+						width: 10px;
+						height: 10px;
+						border-right: 1px solid $color_black;
+						border-bottom: 1px solid $color_black;
+						transform: rotate(-45deg);
+					}
+				}
+			}
+
+			&:hover,
+			&._active {
+				& > a {
+					color: $color_beige_dark;
+
+					&::after {
+						border-color: $color_beige_dark;
+					}
+				}
+			}
+
+			& > a {
+				color: inherit;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			& > ul {
+				margin: 0;
+				padding: 0 0 40px 70px;
+				list-style: none;
+				position: absolute;
+				top: -100vh;
+				left: 210px;
+				right: 0;
+				column-count: 2;
+				column-gap: 30px;
+				transition: $transition;
+
+				& > li {
+					& > ul {
+						margin: 0 0 30px ;
+						list-style: none;
+						padding: 0;
+
+						&._strong {
+							& li {
+								font-weight: 500;
+							}
+						}
+
+						& li {
+							margin-bottom: 15px;
+							font-weight: normal;
+
+							&:last-child {
+								margin-bottom: 0;
+							}
+
+							&:hover,
+							&._active {
+								& a {
+									color: $color_beige_dark;
+								}
+							}
+
+							& a {
+								color: inherit;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

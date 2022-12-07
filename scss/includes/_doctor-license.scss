@@ -1,0 +1,12 @@
+.doctor-license {
+	overflow: hidden;
+
+	& .tns-ovh {
+		overflow: visible;
+	}
+
+	&__img {
+		height: 100%;
+		width: auto;
+	}
+}

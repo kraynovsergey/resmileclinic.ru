@@ -1,0 +1,42 @@
+.order {
+	background: linear-gradient(89.37deg, #F2F2F2 11.56%, #FDF1E6 94.48%);
+	padding: 80px 100px;
+	position: relative;
+
+	@media (max-width: 991px) {
+		padding: 23px 15px 100px;
+		overflow: hidden;
+	}
+
+	&__img {
+		position: absolute;
+		right: 72px;
+		bottom: 0;
+
+		@media (max-width: 1199px) {
+			right: 30px;
+		}
+
+		@media (max-width: 991px) {
+			right: -80px;
+			width: 270px;
+			height: auto;
+			bottom: -80px;
+		}
+
+		@media (max-width: 575px) {
+			bottom: -60px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		text-align: left !important;
+	}
+
+	&__subtitle {
+		font-size: 1.18rem;
+		font-weight: 500;
+		margin-bottom: 25px;
+	}
+}

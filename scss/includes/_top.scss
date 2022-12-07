@@ -1,0 +1,26 @@
+.top {
+	height: 50px;
+	background: #D3AD6B;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media (max-width: 991px) {
+		display: none;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color_white;
+
+		& svg {
+			margin-right: 12px;
+
+			& use {
+				stroke: $color_white;
+			}
+		}
+	}
+}

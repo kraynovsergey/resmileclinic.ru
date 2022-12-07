@@ -1,0 +1,24 @@
+.dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 45px;
+
+	@media (max-width: 991px) {
+		padding-top: 25px;
+	}
+
+	&__item {
+		width: 8px;
+		height: 8px;
+		background: $color_brown;
+		border-radius: 50%;
+		margin: 0 7.5px;
+
+		&.tns-nav-active {
+			width: 22px;
+			border-radius: 10px;
+			background: #B7B7B7;
+		}
+	}
+}

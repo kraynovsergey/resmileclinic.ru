@@ -1,0 +1,42 @@
+.doctor {
+	display: flex;
+	flex-direction: column;
+	background: $color_beige;
+
+	&__img {
+		width: 100%;
+
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		padding: 20px 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__position {
+		color: #B3B3B3;
+	}
+
+	&__title {
+		color: inherit;
+		text-decoration: none;
+		font-size: 1.62rem;
+		font-weight: 500;
+		margin-bottom: 20px;
+		line-height: 120%;
+
+		&:hover {
+			color: $color_brown;
+		}
+	}
+
+	&__link {
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,29 @@
+.shtorka {
+	&__img {
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	& .twentytwenty-handle {
+		background: $color_black;
+		border: 1px solid $color_white;
+	}
+
+	& .twentytwenty-left-arrow {
+		margin-left: -15px;
+	}
+
+	& .twentytwenty-right-arrow {
+		margin-right: -15px;
+	}
+
+	& .twentytwenty-handle:before,
+	& .twentytwenty-handle:after {
+		background: none;
+		border-right: 1px dashed $color_white;
+		width: 1px;
+		margin-left: -0.5px
+	}
+}

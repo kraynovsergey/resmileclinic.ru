@@ -1,0 +1,146 @@
+.services {
+	overflow: hidden;
+
+	&__img {
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -35px -85px;
+
+		@media (max-width: 1199px) {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		@media (max-width: 991px) {
+			margin-bottom: -70px;
+		}
+	}
+
+	&__col {
+		width: 33.33%;
+		padding: 0 35px;
+		display: flex;
+		justify-content: center;
+		margin: -30px 0 85px;
+
+		@media (max-width: 1199px) {
+			padding: 0 15px;
+		}
+
+		@media (max-width: 991px) {
+			width: 50%;
+			margin-bottom: 70px;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+
+		&:nth-child(3n + 1) {
+			@media (min-width: 992px) {
+				justify-content: flex-end;
+			}
+		}
+
+		&:nth-child(3n) {
+			@media (min-width: 992px) {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	&__item {
+		max-width: 316px;
+		width: 100%;
+		background: $color_white;
+		border-radius: 20px;
+		padding: 0 15px 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: $color_brown;
+
+		@media (max-width: 991px) {
+			max-width: 100%;
+		}
+
+		@media (max-width: 767px) {
+			max-width: 80%;
+		}
+
+		@media (max-width: 575px) {
+			max-width: 95%;
+		}
+	}
+
+	&__icon {
+		width: 66px;
+		height: 59px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $color_brown;
+		border-radius: 10px;
+		margin: -23px 0 35px;
+
+		& svg {
+			fill: $color_white;
+		}
+	}
+
+	&__title {
+		font-size: 1.31rem;
+		font-weight: bold;
+		color: inherit;
+		text-decoration: none;
+		margin-bottom: 30px;
+
+		&:hover {
+			color: $color_black;
+		}
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		@media (max-width: 1199px) and (min-width: 992px) {
+			margin-bottom: -10px;
+		}
+	}
+
+	&__control {
+		font-size: .87rem;
+		margin-right: 15px;
+
+		@media (max-width: 1199px) and (min-width: 992px) {
+			width: 50%;
+			margin-right: 0;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&._link {
+			text-decoration: none;
+			color: inherit;
+
+			&:hover {
+				color: $color_black;
+			}
+		}
+	}
+}

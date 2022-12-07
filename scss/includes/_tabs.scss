@@ -1,0 +1,45 @@
+.tabs {
+	&__links {
+		padding-bottom: 55px;
+		display: flex;
+		align-items: center;
+		overflow-x: auto;
+
+		@media (max-width: 991px) {
+			padding-bottom: 20px;
+		}
+
+		&::-webkit-scrollbar {
+			width: 0 !important;
+			height: 0 !important;
+		}
+	}
+
+	&__link {
+		margin-right: 30px;
+		font-size: 1.12rem;
+		font-weight: 500;
+		white-space: nowrap;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&._active {
+			color: #7C6E6E;
+			text-decoration: underline;
+		}
+
+		&:hover {
+			color: $color_brown;
+		}
+	}
+
+	&__content {
+		display: none;
+
+		&._active {
+			display: block;
+		}
+	}
+}

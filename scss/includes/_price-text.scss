@@ -1,0 +1,37 @@
+.price-text {
+	&__cols {
+		display: flex;
+
+		@media (max-width: 991px) {
+			flex-direction: column;
+		}
+	}
+
+	&__col {
+		width: 50%;
+
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+
+		& p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__title {
+		padding: 0;
+		margin: 0;
+		font-weight: 500;
+		font-size: 1.62rem;
+		line-height: 120%;
+		max-width: 90%;
+
+		@media (max-width: 991px) {
+			margin-bottom: 25px;
+			max-width: 100%;
+		}
+	}
+}

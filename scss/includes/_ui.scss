@@ -1,0 +1,9 @@
+a {
+	color: $color_yellow;
+	text-decoration: underline;
+
+	&:hover {
+		color: $color_yellow;
+		text-decoration: none;
+	}
+}

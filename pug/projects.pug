@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Проекты', description: 'Описание страницы проектов', keywords: 'Ключи страницы проектов'}
+        include includes/_meta
+    body
+        include includes/_top
+
+        include includes/_header
+
+        main.main._inner
+            include includes/_breadcrumbs
+
+            include includes/_projects-top
+
+            include includes/_projects
+
+            include includes/_order
+
+        include includes/_footer
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

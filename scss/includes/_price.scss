@@ -1,0 +1,165 @@
+.price {
+	&__wrapper {
+		width: 100%;
+		max-width: 820px;
+	}
+
+	&__item {
+		padding: 60px 0;
+		border-bottom: 1px solid #E8E8E8;
+
+		@media (max-width: 991px) {
+			padding: 35px 0;
+		}
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+
+	&__button {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.25rem;
+		font-weight: bold;
+
+		&:hover {
+			& .price__button-text {
+				color: $color_beige_dark;
+			}
+		}
+
+		&-text {
+			max-width: 400px;
+			text-align: left;
+		}
+
+		&._active {
+			& .price__circle {
+				&::after {
+					content: '-';
+					position: relative;
+					top: -2px;
+				}
+			}
+
+			& + .price__rows {
+				display: flex;
+			}
+		}
+	}
+
+	&__circle {
+		min-width: 24px;
+		max-width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: $color_beige_dark;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 30px;
+
+		&::after {
+			content: '+';
+			color: $color_white;
+		}
+	}
+
+	&__rows {
+		padding-top: 60px;
+		display: none;
+		flex-direction: column;
+
+		@media (max-width: 991px) {
+			padding-top: 30px;
+		}
+	}
+
+	&__row {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 30px 0 30px 30px;
+		border-bottom: 1px solid #E8E8E8;
+
+		@media (max-width: 991px) {
+			padding-left: 0;
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		&-price {
+			font-size: 1.12rem;
+			font-weight: bold;
+			color: $color_beige_dark;
+			padding-left: 30px;
+
+			@media (max-width: 767px) {
+				padding-left: 0;
+				margin-top: 10px;
+			}
+		}
+
+		&-text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-title {
+			font-weight: 500;
+		}
+
+		&-controls {
+			margin-top: 12px;
+			display: flex;
+			align-items: center;
+
+			@media (max-width: 575px) {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+
+		&-control {
+			margin-right: 35px;
+			color: #7C6E6E;
+			text-decoration: none;
+
+			@media (max-width: 575px) {
+				margin-right: 0;
+				margin-bottom: 8px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+}

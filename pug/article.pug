@@ -1,0 +1,120 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Статья', description: 'Описание страницы статьи', keywords: 'Ключи страницы статьи'}
+        include includes/_meta
+    body
+        include includes/_top
+
+        include includes/_header
+
+        main.main._inner
+            include includes/_breadcrumbs
+
+            section.intro._black
+                .intro__img(style="background: url('img/tmp/intro-article@2x.jpg') no-repeat center center; background-size: cover;")
+
+                .container
+                    .intro__wrapper
+                        h1.intro__title._white Безопасность лечения
+                        .intro__text Один из приоритетов клиники обеспечение максимальной стерильности и чистоты для лечения пациентов
+
+            section.section.article
+                .container
+                    .article__wrapper
+                        .article__text-block
+                            h2.section__subtitle Безопасность лечения
+                            p Планируя обращение в стоматологическую клинику, пациент должен быть уверен, что лечебные мероприятия помогут восстановить здоровье и при этом будут абсолютно безопасными. Стоматология сегодня – это не просто лечение кариеса или десен, но широкий спектр довольно сложных процедур, связанных с восстановлением зубов – вживление имплантов, подсадка костной ткани и т.д. Следование мировым стандартам качества лечения позволяет специалистам клиники РУТТ в Москве гарантировать пациентам безопасность и быстрое выздоровление без осложнений.
+
+                        .article__text-block
+                            h2.section__subtitle Чистота залог здоровья
+                            p Переступив порог нашей клиники, вы попадаете в комфортную атмосферу. Пациентам предлагается надеть одноразовые бахилы, чтобы уличная пыль и грязь не стали причиной развития микробной среды внутри помещения. Неустанно клининговый персонал клиники следит за чистотой и идеальным состоянием всех поверхностей. После каждой операции или хирургической манипуляции, не зависимо от сложности и продолжительности, происходит стерилизация кабинета.
+
+                        picture.article__img
+                            source(type="image/webp" srcset="img/tmp/article-full-img@2x.webp 2x, img/tmp/article-full-img.webp 1x")
+                            source(type="image/jpeg" srcset="img/tmp/article-full-img@2x.jpg 2x, img/tmp/article-full-img.jpg 1x")
+                            img(src="img/tmp/article-full-img.jpg" alt="" width="822" height="422")
+
+                        .article__text-block
+                            p Врачи-стоматологи – от гигиениста до хирурга-имплантолога – работают с каждым пациентом в одноразовой маске и перчатках. Также применяются индивидуальные хирургические комплекты.
+
+                        .article__text-block
+                            p.quotes
+                                svg(width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-quotes")
+                                strong Одноразовые инструменты утилизируются сразу после работы с пациентом.
+
+                        .article__text-block
+                            p.article__box Переступив порог нашей клиники, вы попадаете в комфортную атмосферу. Пациентам предлагается надеть одноразовые бахилы, чтобы уличная пыль и грязь не стали причиной развития микробной среды внутри помещения. Неустанно клининговый персонал клиники следит за чистотой и идеальным состоянием всех поверхностей. После каждой операции или хирургической манипуляции, не зависимо от сложности и продолжительности, происходит стерилизация кабинета.
+
+                        .article__text-block.article__cols
+                            .article__col
+                                h2.section__subtitle Чистота залог здоровья
+                                p Переступив порог нашей клиники, вы попадаете в комфортную атмосферу. Пациентам предлагается надеть одноразовые бахилы, чтобы уличная пыль и грязь не стали причиной развития микробной среды внутри помещения. Неустанно клининговый персонал клиники следит за чистотой и идеальным состоянием всех поверхностей. После каждой операции или хирургической манипуляции, не зависимо от сложности и продолжительности, происходит стерилизация кабинета.
+                            .article__col
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/article-half-1@2x.webp 2x, img/tmp/article-half-1.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-half-1@2x.jpg 2x, img/tmp/article-half-1.jpg 1x")
+                                    img(src="img/tmp/article-half-1.jpg" alt="" width="384" height="372")
+
+                        .article__text-block.article__cols._revers
+                            .article__col
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/article-half-2@2x.webp 2x, img/tmp/article-half-2.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/article-half-2@2x.jpg 2x, img/tmp/article-half-2.jpg 1x")
+                                    img(src="img/tmp/article-half-2.jpg" alt="" width="384" height="372")
+                            .article__col
+                                h2.section__subtitle Чистота залог здоровья
+                                p Переступив порог нашей клиники, вы попадаете в комфортную атмосферу. Пациентам предлагается надеть одноразовые бахилы, чтобы уличная пыль и грязь не стали причиной развития микробной среды внутри помещения. Неустанно клининговый персонал клиники следит за чистотой и идеальным состоянием всех поверхностей. После каждой операции или хирургической манипуляции, не зависимо от сложности и продолжительности, происходит стерилизация кабинета.
+
+            include includes/_gallery
+
+            section.section.similar._gray._big-padding
+                .container
+                    .similar__wrapper
+                        h2.section__subtitle Похожие статьи
+
+                        .similar__init
+                            .similar__slide
+                                a.articles__item(href="article.html")
+                                    picture
+                                        source(type="image/webp" srcset="img/tmp/articles-1@2x.webp 2x, img/tmp/articles-1.webp 1x")
+                                        source(type="image/jpeg" srcset="img/tmp/articles-1@2x.jpg 2x, img/tmp/articles-1.jpg 1x")
+                                        img.articles__img(src="img/tmp/articles-1.jpg" alt="" width="314" height="174")
+                                    | Первичная консультация
+                                    span.articles__text Переступив порог нашей клиники, вы попадаете в комфортную атмосферу.
+
+                            .similar__slide
+                                a.articles__item(href="article.html")
+                                    picture
+                                        source(type="image/webp" srcset="img/tmp/articles-2@2x.webp 2x, img/tmp/articles-2.webp 1x")
+                                        source(type="image/jpeg" srcset="img/tmp/articles-2@2x.jpg 2x, img/tmp/articles-2.jpg 1x")
+                                        img.articles__img(src="img/tmp/articles-2.jpg" alt="" width="314" height="174")
+                                    | Чистота залог здоровья Безопасность лечения
+                                    span.articles__text Пациентам предлагается надеть одноразовые бахилы, чтобы уличная пыль и грязь не стали причиной развития микробной среды внутри помещения. Неустанно клининговый персонал
+
+                            .similar__slide
+                                a.articles__item(href="article.html")
+                                    picture
+                                        source(type="image/webp" srcset="img/tmp/articles-3@2x.webp 2x, img/tmp/articles-3.webp 1x")
+                                        source(type="image/jpeg" srcset="img/tmp/articles-3@2x.jpg 2x, img/tmp/articles-3.jpg 1x")
+                                        img.articles__img(src="img/tmp/articles-3.jpg" alt="" width="314" height="174")
+                                    | Чистота залог здоровья Безопасность лечения
+                                    span.articles__text Пациентам предлагается надеть одноразовые бахилы, чтобы уличная пыль и грязь не стали причиной
+
+                            .similar__slide
+                                a.articles__item(href="article.html")
+                                    picture
+                                        source(type="image/webp" srcset="img/tmp/articles-3@2x.webp 2x, img/tmp/articles-3.webp 1x")
+                                        source(type="image/jpeg" srcset="img/tmp/articles-3@2x.jpg 2x, img/tmp/articles-3.jpg 1x")
+                                        img.articles__img(src="img/tmp/articles-3.jpg" alt="" width="314" height="174")
+                                    | Чистота залог здоровья Безопасность лечения
+                                    span.articles__text Пациентам предлагается надеть одноразовые бахилы, чтобы уличная пыль и грязь не стали причиной
+
+        include includes/_footer
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

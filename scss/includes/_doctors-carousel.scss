@@ -1,0 +1,9 @@
+.doctors-carousel {
+	overflow: hidden;
+
+	& .tns-ovh {
+		@media (max-width: 767px) {
+			overflow: visible;
+		}
+	}
+}

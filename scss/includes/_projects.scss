@@ -1,0 +1,59 @@
+.projects {
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px -70px;
+
+		@media (max-width: 991px) {
+			margin-bottom: -20px;
+		}
+
+		@media (max-width: 575px) {
+			margin: 0;
+		}
+	}
+
+	&__col {
+		padding: 0 20px;
+		width: 25%;
+		margin-bottom: 70px;
+		display: flex;
+
+		@media (max-width: 1199px) {
+			width: 33.33%;
+		}
+
+		@media (max-width: 991px) {
+			width: 50%;
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 575px) {
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	&__item {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+
+		&:last-child {
+			@media (max-width: 575px) {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+		color: inherit;
+		text-decoration: none;
+		margin-top: 15px;
+
+		&:hover {
+			color: $color_brown;
+		}
+	}
+}

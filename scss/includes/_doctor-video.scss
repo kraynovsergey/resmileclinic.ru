@@ -1,0 +1,19 @@
+.doctor-video {
+	@media (max-width: 991px) {
+		overflow: hidden;
+	}
+
+	& .tns-ovh {
+		@media (max-width: 991px) {
+			overflow: visible;
+		}
+	}
+
+	&__init {
+		display: flex;
+	}
+
+	&__slide {
+		display: flex;
+	}
+}

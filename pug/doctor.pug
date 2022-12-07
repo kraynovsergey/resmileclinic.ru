@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Доктор', description: 'Описание страницы врача', keywords: 'Ключи страницы врача'}
+        include includes/_meta
+    body
+        include includes/_top
+
+        include includes/_header
+
+        main.main._inner
+            include includes/_breadcrumbs
+
+            include includes/_doctor-page
+
+            include includes/_doctor-license
+
+            include includes/_service-works
+
+            include includes/_doctor-video
+
+            include includes/_question
+
+        include includes/_footer
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

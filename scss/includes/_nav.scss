@@ -1,0 +1,56 @@
+.nav {
+	@media (max-width: 1199px) {
+		font-size: .7rem;
+	}
+
+	& > ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		& > li {
+			margin-right: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&._active,
+			&:hover {
+				color: $color_yellow;
+
+				& > a {
+					&::after {
+						border-color: $color_yellow !important;
+					}
+				}
+			}
+
+			&._parent {
+				& a {
+					&::after {
+						content: '';
+						width: 10px;
+						height: 10px;
+						border-bottom: 1px solid $color_black;
+						border-right: 1px solid $color_black;
+						transform: rotate(45deg);
+						margin-left: 9px;
+						position: relative;
+						top: -2px;
+					}
+				}
+			}
+
+			& > a {
+				color: inherit;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

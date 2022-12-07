@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru")
+	head
+		- var seo = {title: 'Главная страница', description: 'Описание главной страницы', keywords: 'Ключи главной страницы'}
+		include includes/_meta
+	body
+		include includes/_top
+
+		include includes/_header
+
+		main.main
+			include includes/_intro-home
+
+			include includes/_about
+
+			include includes/_services
+
+			include includes/_gallery
+
+			include includes/_doctors-carousel
+
+			include includes/_works-carousel
+
+			include includes/_text-cols-home
+
+			include includes/_order
+
+			include includes/_video-reviews
+
+			include includes/_panorama
+
+			include includes/_contacts
+
+		include includes/_footer
+
+		include includes/_svg
+
+		include includes/_modal
+
+		include includes/_scripts

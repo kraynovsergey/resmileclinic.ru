@@ -1,0 +1,29 @@
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	flex-direction: column;
+	display: flex;
+
+	& li {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: '';
+			min-width: 4px;
+			max-width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: $color_black;
+			margin-right: 15px;
+			position: relative;
+			top: 11px;
+		}
+	}
+}

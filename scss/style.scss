@@ -1,0 +1,77 @@
+$color_black: #000000;
+$color_white: #FFFFFF;
+$color_yellow: #FED880;
+$color_beige: #F1ECE2;
+$color_beige_light: #F9F7F5;
+$color_beige_dark: #B6A480;
+$color_brown: #786A67;
+$color_gray: #F2F2F2;
+
+$transition: 0.5s ease;
+
+@import "includes/reboot";
+@import "includes/grid";
+@import "includes/fonts";
+@import "includes/default";
+
+@import "includes/ui";
+@import "includes/svg";
+
+@import "includes/top";
+@import "includes/header";
+@import "includes/logo";
+@import "includes/nav";
+@import "includes/button";
+@import "includes/nav-slide";
+@import "includes/nav-mobile";
+@import "includes/intro";
+@import "includes/about";
+@import "includes/section";
+@import "includes/border-bottom";
+@import "includes/more";
+@import "includes/services";
+@import "includes/gallery";
+@import "includes/dots";
+@import "includes/doctor";
+@import "includes/doctors-carousel";
+@import "includes/work";
+@import "includes/shtorka";
+@import "includes/works-carousel";
+@import "includes/text-cols";
+@import "includes/quotes";
+@import "includes/order";
+@import "includes/form";
+@import "includes/video-reviews";
+@import "includes/video-reviews-carousel";
+@import "includes/panorama";
+@import "includes/contacts";
+@import "includes/footer";
+@import "includes/modal";
+@import "includes/main";
+@import "includes/breadcrumbs";
+@import "includes/pluses";
+@import "includes/license";
+@import "includes/requisites";
+@import "includes/price-text";
+@import "includes/price";
+@import "includes/faq";
+@import "includes/page-top";
+@import "includes/service-pluses";
+@import "includes/tabs";
+@import "includes/question";
+@import "includes/doctors";
+@import "includes/doctor-page";
+@import "includes/list";
+@import "includes/doctor-license";
+@import "includes/doctor-video";
+@import "includes/projects";
+@import "includes/articles";
+@import "includes/article";
+@import "includes/similar";
+@import "includes/route";
+
+
+
+
+
+

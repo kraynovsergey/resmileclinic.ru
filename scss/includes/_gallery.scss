@@ -1,0 +1,65 @@
+.gallery {
+	overflow: hidden;
+
+	& .tns-ovh {
+		overflow: visible;
+	}
+
+	&__slide {
+		& picture {
+			position: relative;
+			display: block;
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .6);
+			}
+		}
+
+		&.tns-slide-active {
+			@media (min-width: 576px) {
+				& + .tns-slide-active {
+					& picture {
+						&::after {
+							opacity: 0;
+						}
+					}
+
+					& + .tns-slide-active {
+						& picture {
+							&::after {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+
+			@media (max-width: 575px) {
+				& picture {
+					&::after {
+						opacity: 0;
+					}
+				}
+
+				& + .tns-slide-active {
+					& picture {
+						&::after {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+}

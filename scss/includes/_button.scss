@@ -1,0 +1,28 @@
+.button {
+	height: 44px;
+	padding: 0 22px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+
+	&._yellow {
+		background: $color_yellow;
+		color: inherit;
+
+		&:hover {
+			background: $color_brown;
+			color: $color_white;
+		}
+	}
+
+	&._black {
+		background: $color_black;
+		color: $color_white;
+
+		&:hover {
+			background: $color_brown;
+		}
+	}
+}

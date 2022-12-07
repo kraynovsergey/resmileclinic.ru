@@ -1,0 +1,25 @@
+section.section
+    .container
+        .order
+            h3.section__title.order__title._left Запишитесь сейчас
+            .order__subtitle На бесплатную консультацию и диагностику
+
+            form.form(action="#" method="post")
+                .form__cols
+                    fieldset.form__fieldset.form__col
+                        label.form__label(for="order-page-name") Ваше Имя
+                        input.form__input(type="text" name="name" id="order-page-name" placeholder="Имя")
+
+                    fieldset.form__fieldset.form__col
+                        label.form__label(for="order-page-phone") Номер Телефона
+                        input.form__input(type="tel" name="phone" id="order-page-phone" placeholder="+7")
+
+                    .form__col
+                        button.button.form__button._yellow(type="submit") Записаться
+
+                .form__policy Заполняя форму, я соглашаюсь с политикой конфиденциальности “ReSmile”
+
+            picture
+                source(type="image/webp" srcset="img/order@2x.webp 2x, img/order.webp 1x")
+                source(type="image/png" srcset="img/order@2x.png 2x, img/order.png 1x")
+                img.order__img(src="img/order.png" alt="" width="362" height="479")

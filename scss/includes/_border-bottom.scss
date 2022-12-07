@@ -1,0 +1,13 @@
+.border-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	&::after {
+		content: '';
+		width: 88px;
+		height: 3px;
+		background: $color_black;
+		margin-top: 20px;
+	}
+}

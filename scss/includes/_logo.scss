@@ -1,0 +1,44 @@
+.logo {
+	display: flex;
+	align-items: center;
+
+	&._white {
+		& use {
+			fill: $color_white;
+		}
+	}
+
+	& use {
+		fill: #B7B7B7;
+	}
+
+	&__icon {
+		margin-right: 16px;
+		position: relative;
+
+		& svg {
+			@media (max-width: 991px) {
+				height: 28px;
+				width: auto;
+			}
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 4.5px;
+		bottom: 0;
+
+		@media (max-width: 991px) {
+			height: 22px;
+			width: auto;
+		}
+	}
+
+	&__text {
+		@media (max-width: 991px) {
+			height: 22px;
+			width: auto;
+		}
+	}
+}

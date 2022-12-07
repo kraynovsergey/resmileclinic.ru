@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Цены', description: 'Описание страницы цены', keywords: 'Ключи страницы цены'}
+        include includes/_meta
+    body
+        include includes/_top
+
+        include includes/_header
+
+        main.main._inner
+            include includes/_breadcrumbs
+
+            include includes/_intro-price
+
+            include includes/_price-text
+
+            include includes/_price
+
+            include includes/_faq
+
+        include includes/_footer
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

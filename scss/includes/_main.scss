@@ -1,0 +1,9 @@
+.main {
+	&._inner {
+		padding-top: 20px;
+
+		@media (max-width: 991px) {
+			padding-top: 10px;
+		}
+	}
+}

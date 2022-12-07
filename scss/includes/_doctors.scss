@@ -1,0 +1,153 @@
+.doctors {
+	&__selects {
+		margin-bottom: 50px;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 991px) {
+			margin-bottom: 30px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__select {
+		display: flex;
+		align-items: center;
+		margin-right: 70px;
+
+		@media (max-width: 991px) {
+			margin-right: 0;
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&-title {
+			font-weight: bold;
+			margin-right: 30px;
+
+			@media (max-width: 991px) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__choose {
+		position: relative;
+
+		&-current {
+			height: 40px;
+			border: 1px solid $color_black;
+			border-radius: 20px;
+			padding: 0 30px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			min-width: 190px;
+
+			@media (max-width: 991px) {
+				height: 30px;
+				padding: 0 20px;
+			}
+
+			&::after {
+				content: '';
+				width: 8px;
+				height: 8px;
+				border-left: 1px solid $color_black;
+				border-bottom: 1px solid $color_black;
+				transform: rotate(-45deg);
+				position: relative;
+				top: -2px;
+				margin-left: 15px;
+			}
+
+			&._active {
+				&::after {
+					transform: rotate(135deg);
+					top: 2px;
+				}
+
+				& + .doctors__radios {
+					display: flex;
+				}
+			}
+		}
+	}
+
+	&__radios {
+		position: absolute;
+		top: calc(100% + 16px);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+		background: $color_white;
+		border-radius: 20px;
+		padding: 17px 25px;
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		min-width: 100%;
+		z-index: 2;
+	}
+
+	&__radio {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		& input {
+			display: none;
+
+			&:checked {
+				& + label {
+					color: #7C6E6E;
+				}
+			}
+		}
+
+		& label {
+			white-space: nowrap;
+			cursor: pointer;
+		}
+	}
+
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -12.5px -47px;
+
+		@media (max-width: 767px) {
+			margin: 0;
+			flex-direction: column;
+		}
+	}
+
+	&__col {
+		padding: 0 12.5px;
+		display: flex;
+		width: 33.33%;
+		margin-bottom: 47px;
+
+		@media (max-width: 991px) {
+			width: 50%;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

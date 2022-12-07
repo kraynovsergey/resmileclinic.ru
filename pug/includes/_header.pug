@@ -1,0 +1,301 @@
+header.header
+    .container.header__cols
+        a.header__col.logo._logo(href="index.html")
+            span.logo__icon
+                svg(width="40" height="49" viewBox="0 0 40 49" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    use(xlink:href="#svg-logo")
+                picture
+                    source(type="image/webp" srcset="img/logo@2x.webp 2x, img/logo.webp 2x")
+                    source(type="image/png" srcset="img/logo@2x.png 2x, img/logo.png 2x")
+                    img.logo__img(src="img/logo.png" alt="" width="12" height="35")
+
+            svg.logo__text(width="95" height="24" viewBox="0 0 95 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-logo-text")
+
+        .header__col.header__mobile
+            a.header__mobile-phone(href="tel:+74952555297")
+                svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    use(xlink:href="#svg-phone")
+            button.button.header__mobile-button._yellow(type="button" data-fancybox data-src="#modal-order") Записаться
+            button.header__mobile-burger(type="button")
+                span
+                span
+                span
+
+        nav.header__col.nav._nav
+            // Класс _active у активного li
+            ul
+                li
+                    a(href="about.html") О клинике
+                li
+                    a(href="price.html") Цены
+                li._parent
+                    a(href="#nav-services") Услуги
+                li
+                    a(href="doctors.html") Врачи
+                li
+                    a(href="projects.html") Фото работ
+                li
+                    a(href="articles.html") Пациентам
+                li
+                    a(href="contacts.html") Контакты
+
+        .header__col.header__contacts._contacts
+            a.header__phone(href="tel:+74952555297") +7 (495) 255-52-97
+            .header__schedule Ежедневно 10:00-21:00
+
+        .header__col._callback
+            button.header__callback.button._yellow(type="button" data-fancybox data-src="#modal-order") Заказать звонок
+
+    .nav-slide(id="nav-services")
+        .container
+            // Класс _active у активного li
+            ul.nav-slide__list
+                li._parent
+                    a(href="service.html") Имплантация зубов
+                    ul
+                        li
+                            ul
+                                li
+                                    a(href="service.html") Базальная имплантация
+                                li
+                                    a(href="service.html") Имплантация с немедленной нагрузкой
+                                li
+                                    a(href="service.html") Экспресс-имплантация
+                                li
+                                    a(href="service.html") Зубные мини импланты
+                                li
+                                    a(href="service.html") Имплантация последнего поколения
+                                li
+                                    a(href="service.html") Безоперационная имплантацяи
+                                li
+                                    a(href="service.html") Дентальная имплантация
+                                li
+                                    a(href="service.html") Балочные протезы
+                        li
+                            ul._strong
+                                li
+                                    a(href="service.html") Классическая двухэтапная имплантация
+                                li
+                                    a(href="service.html") Имплантация зубов all-on-4
+                                li
+                                    a(href="service.html") Имплантация зубов All-on-6
+                        li
+                            ul
+                                li
+                                    a(href="service.html") Трансгингивальная имплантация
+                                li
+                                    a(href="service.html") Комбинированная имплантация
+                                li
+                                    a(href="service.html") Имплантация Мульти-юнит
+
+                        li
+                            ul
+                                li
+                                    a(href="service.html") Имплантация под ключ
+                                li
+                                    a(href="service.html") Подготовка к имплантации
+                                li
+                                    a(href="service.html") Компрессионные импланты
+
+                        li
+                            ul._strong
+                                li
+                                    a(href="service.html") Синус-лифтинг
+
+                        li
+                            ul
+                                li
+                                    a(href="service.html") Имплантация 1 зуба
+                                li
+                                    a(href="service.html") Имплантация 2 зубов
+                                li
+                                    a(href="service.html") Имплантация 3 зубов
+
+                        li
+                            ul
+                                li
+                                    a(href="service.html") Имплантация нижних зубов
+                                li
+                                    a(href="service.html") Имплантация передних зубов
+                                li
+                                    a(href="service.html") Имплантация при полном отсутствии зубов
+                                li
+                                    a(href="service.html") Имплантация верхних зубов
+                                li
+                                    a(href="service.html") Имплантация жевательных зубов
+
+                        li
+                            ul
+                                li
+                                    a(href="service.html") Имплантация при пародонтозе
+                                li
+                                    a(href="service.html") Имплантация при отсутствии костной ткани
+                                li
+                                    a(href="service.html") Имплантация при неправильном прикусе
+                        li
+                            ul
+                                li
+                                    a(href="service.html") Скуловая имплантация
+
+                li
+                    a(href="service.html") Протезирование зубов
+                li
+                    a(href="service.html") Хирургия
+                li
+                    a(href="service.html") Ортодонтия
+                li
+                    a(href="service.html") Диагностика
+                li
+                    a(href="service.html") Терапия
+
+    .nav-slide__overlay
+
+    .nav-mobile._main
+        button.nav-mobile__close(type="button")
+
+        .container.nav-mobile__content
+            //Класс _active у активного li
+            ul.nav-mobile__list
+                li
+                    a(href="about.html") О клинике
+                li
+                    a(href="price.html") Цены
+                li._parent
+                    a(href="service.html") Услуги
+                    span
+                    ul
+                        li._parent
+                            a(href="service.html") Имплантация зубов
+                            span(data-src="#nav-mobile-service-1")
+                        li._parent
+                            a(href="service.html") Протезирование
+                            span(data-src="#nav-mobile-service-2")
+                        li._parent
+                            a(href="service.html") Ортодонтия
+                            span(data-src="#nav-mobile-service-3")
+                        li._parent
+                            a(href="service.html") Хирургия
+                            span(data-src="#nav-mobile-service-4")
+                        li._parent
+                            a(href="service.html") Терапия
+                            span(data-src="#nav-mobile-service-5")
+                        li._parent
+                            a(href="service.html") Диагностика
+                            span(data-src="#nav-mobile-service-6")
+                li
+                    a(href="doctors.html") Врачи
+                li
+                    a(href="projects.html") Фото работ
+                li
+                    a(href="articles.html") Пациентам
+                li
+                    a(href="contacts.html") Контакты
+
+            .nav-mobile__contacts
+                a.nav-mobile__phone(href="tel:+74952555297") +7 (495) 255-52-97
+                .nav-mobile__item.nav-mobile__schedule
+                    svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-schedule")
+                    | Ежедневно 10:00-21:00
+                .nav-mobile__item
+                    svg(width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        use(xlink:href="#svg-address")
+                    | г. Москва , м. Бутрыская Огородный пр-д 19к2
+
+    .nav-mobile(id="nav-mobile-service-1")
+        button.nav-mobile__close._back(type="button")
+            svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-back")
+
+        .container.nav-mobile__content
+            .nav-mobile__title Имплантация зубов
+
+            ul.nav-mobile__list._sub
+                li
+                    a(href="service.html") Технология ReSmile
+                li
+                    a(href="service.html") Классическая двухэтапная имплантация
+                li
+                    a(href="service.html") Имплантация All on 4
+                li
+                    a(href="service.html") Имплантация All on 6
+                li
+                    a(href="service.html") Имплантация за 1 день
+                li
+                    a(href="service.html") Имплантация Мульти-юнит
+                li
+                    a(href="service.html") Имплантация на мини имплантах
+                li
+                    a(href="service.html") Комплексная имплантация
+                li
+                    a(href="service.html") Удаление импланта
+                li
+                    a(href="service.html") Птеригоидные имланты
+
+    .nav-mobile(id="nav-mobile-service-2")
+        button.nav-mobile__close._back(type="button")
+            svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-back")
+
+        .container.nav-mobile__content
+            .nav-mobile__title Протезирование
+
+            ul.nav-mobile__list._sub
+                li
+                    a(href="service.html") Подкатегория протезирования
+
+    .nav-mobile(id="nav-mobile-service-3")
+        button.nav-mobile__close._back(type="button")
+            svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-back")
+
+        .container.nav-mobile__content
+            .nav-mobile__title Ортодонтия
+
+            ul.nav-mobile__list._sub
+                li
+                    a(href="service.html") Подкатегория ортодонтии
+
+    .nav-mobile(id="nav-mobile-service-4")
+        button.nav-mobile__close._back(type="button")
+            svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-back")
+
+        .container.nav-mobile__content
+            .nav-mobile__title Хирургия
+
+            ul.nav-mobile__list._sub
+                li
+                    a(href="service.html") Подкатегория хирургии
+
+    .nav-mobile(id="nav-mobile-service-5")
+        button.nav-mobile__close._back(type="button")
+            svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-back")
+
+        .container.nav-mobile__content
+            .nav-mobile__title Терапия
+
+            ul.nav-mobile__list._sub
+                li
+                    a(href="service.html") Подкатегория терапии
+
+    .nav-mobile(id="nav-mobile-service-6")
+        button.nav-mobile__close._back(type="button")
+            svg(width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                use(xlink:href="#svg-back")
+
+        .container.nav-mobile__content
+            .nav-mobile__title Диагностика
+
+            ul.nav-mobile__list._sub
+                li
+                    a(href="service.html") Подкатегория диагностики
+
+
+
+
+
+
+

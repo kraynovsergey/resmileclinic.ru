@@ -1,0 +1,73 @@
+.modal(id="modal-order")
+    button.modal__close(type="button" data-fancybox-close)
+
+    .modal__cols
+        .modal__col._dark
+            .modal__title Запишитесь сейчас на бесплатную консультацию и диагностику
+            ul.modal__list.list
+                li Консультация 3-х специалистов
+                li Бесплатная компьютерная томограмма
+                li Бесплатная ортопантомограмма
+                li Комплексный план лечения
+
+        .modal__col._light
+            form.form._modal(action="#" method="post")
+                fieldset.form__fieldset
+                    label.form__label(for="order-modal-name") Ваше Имя
+                    input.form__input(type="text" name="name" id="order-modal-name" placeholder="Имя")
+
+                fieldset.form__fieldset
+                    label.form__label(for="order-modal-phone") Номер Телефона
+                    input.form__input(type="tel" name="phone" id="order-modal-phone" placeholder="+7")
+
+                .form__fieldset.form__policy Заполняя форму, я соглашаюсь с политикой конфиденциальности “ReSmile”
+
+                button.button.form__button._yellow(type="submit") Записаться
+
+.modal._padding(id="modal-car")
+    button.modal__close(type="button" data-fancybox-close)
+
+    h2.section__title Как до нас добраться на автомобиле
+
+    .route__cols
+        .route__col
+            .route__item
+                .route__title Заголовок
+                picture
+                    source(type="image/webp" srcset="img/tmp/route-1@2x.webp 2x, img/tmp/route-1.webp 1x")
+                    source(type="image/jpeg" srcset="img/tmp/route-1@2x.jpg 2x, img/tmp/route-1.jpg 1x")
+                    img.route__img(src="img/tmp/route-1.jpg" alt="" width="605" height="384")
+                .route__text Как добраться   Коллектив зубных врачей центра дентальной имплантологии ROOTT - это большая сплоченная команда профессионалов высшей категории: ортопедов,
+
+        .route__col
+            .route__item
+                .route__title Заголовок
+                picture
+                    source(type="image/webp" srcset="img/tmp/route-2@2x.webp 2x, img/tmp/route-2.webp 1x")
+                    source(type="image/jpeg" srcset="img/tmp/route-2@2x.jpg 2x, img/tmp/route-2.jpg 1x")
+                    img.route__img(src="img/tmp/route-2.jpg" alt="" width="605" height="384")
+                .route__text Как добраться   Коллектив зубных врачей центра дентальной имплантологии ROOTT - это большая сплоченная команда профессионалов высшей категории: ортопедов,
+
+.modal._padding(id="modal-bus")
+    button.modal__close(type="button" data-fancybox-close)
+
+    h2.section__title Как до нас добраться на общественном транспорте
+
+    .route__cols
+        .route__col
+            .route__item
+                .route__title Заголовок
+                picture
+                    source(type="image/webp" srcset="img/tmp/route-1@2x.webp 2x, img/tmp/route-1.webp 1x")
+                    source(type="image/jpeg" srcset="img/tmp/route-1@2x.jpg 2x, img/tmp/route-1.jpg 1x")
+                    img.route__img(src="img/tmp/route-1.jpg" alt="" width="605" height="384")
+                .route__text Как добраться   Коллектив зубных врачей центра дентальной имплантологии ROOTT - это большая сплоченная команда профессионалов высшей категории: ортопедов,
+
+        .route__col
+            .route__item
+                .route__title Заголовок
+                picture
+                    source(type="image/webp" srcset="img/tmp/route-2@2x.webp 2x, img/tmp/route-2.webp 1x")
+                    source(type="image/jpeg" srcset="img/tmp/route-2@2x.jpg 2x, img/tmp/route-2.jpg 1x")
+                    img.route__img(src="img/tmp/route-2.jpg" alt="" width="605" height="384")
+                .route__text Как добраться   Коллектив зубных врачей центра дентальной имплантологии ROOTT - это большая сплоченная команда профессионалов высшей категории: ортопедов,

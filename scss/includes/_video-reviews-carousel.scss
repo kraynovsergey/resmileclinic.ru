@@ -1,0 +1,22 @@
+.video-reviews-carousel {
+	overflow: hidden;
+
+	& .tns-ovh {
+		@media (max-width: 767px) {
+			overflow: visible;
+		}
+	}
+
+	&__init {
+		display: flex;
+	}
+
+	&__thumbs {
+		padding-top: 15px;
+		display: flex;
+
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}

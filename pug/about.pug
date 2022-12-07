@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'О компании', description: 'Описание страницы о компании', keywords: 'Ключи страницы о компании'}
+        include includes/_meta
+    body
+        include includes/_top
+
+        include includes/_header
+
+        main.main._inner
+            include includes/_breadcrumbs
+
+            include includes/_about-page
+
+            include includes/_pluses
+
+            include includes/_gallery
+
+            include includes/_license
+
+            include includes/_requisites
+
+            include includes/_order
+
+            include includes/_panorama
+
+            include includes/_contacts
+
+        include includes/_footer
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

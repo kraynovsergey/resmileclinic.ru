@@ -1,0 +1,23 @@
+.question
+    .question__black
+
+    .container.question__wrapper
+        .modal__cols
+            .modal__col._question-left
+                .modal__title Задать вопрос врачу
+                p Это высокотехнологичная стоматологическая клиника, где решаются абсолютно любые проблемы с зубами: от неправильного прикуса и болезней десен, до разработки современных протезов и имплантации
+
+            .modal__col._question-right
+                form.form._modal(action="#" method="post")
+                    fieldset.form__fieldset._full
+                        input.form__input._question(type="text" name="name" placeholder="Ваше Имя")
+
+                    fieldset.form__fieldset._full
+                        input.form__input._question(type="email" name="email" placeholder="Ваш email")
+
+                    fieldset.form__fieldset._full
+                        textarea.form__textarea._question(name="message" placeholder="Ваш вопрос")
+
+                    .form__fieldset.form__policy._full._white Заполняя форму, я соглашаюсь с политикой конфиденциальности “ReSmile”
+
+                    button.button.form__button._yellow(type="submit") Отправить

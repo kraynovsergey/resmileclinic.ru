@@ -1,0 +1,89 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Пациентам', description: 'Описание страницы пациента', keywords: 'Ключи страницы пациентам'}
+        include includes/_meta
+    body
+        include includes/_top
+
+        include includes/_header
+
+        main.main._inner
+            include includes/_breadcrumbs
+
+            section.section.articles._pt0
+                .container
+                    h1.section__subtitle Полезная информация для пациентов
+
+                    .articles__cols
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-1@2x.webp 2x, img/tmp/articles-1.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-1@2x.jpg 2x, img/tmp/articles-1.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-1.jpg" alt="" width="382" height="244")
+                                | Первичная консультация
+
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-2@2x.webp 2x, img/tmp/articles-2.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-2@2x.jpg 2x, img/tmp/articles-2.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-2.jpg" alt="" width="382" height="244")
+                                | Удаленная консультация
+
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-3@2x.webp 2x, img/tmp/articles-3.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-3@2x.jpg 2x, img/tmp/articles-3.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-3.jpg" alt="" width="382" height="244")
+                                | Гарантии на лечение
+
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-4@2x.webp 2x, img/tmp/articles-4.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-4@2x.jpg 2x, img/tmp/articles-4.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-4.jpg" alt="" width="382" height="244")
+                                | Безопасность лечения
+
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-5@2x.webp 2x, img/tmp/articles-5.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-5@2x.jpg 2x, img/tmp/articles-5.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-5.jpg" alt="" width="382" height="244")
+                                | Полезные статьи о зубах
+
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-6@2x.webp 2x, img/tmp/articles-6.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-6@2x.jpg 2x, img/tmp/articles-6.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-6.jpg" alt="" width="382" height="244")
+                                | Вопрос-ответ
+
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-7@2x.webp 2x, img/tmp/articles-7.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-7@2x.jpg 2x, img/tmp/articles-7.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-7.jpg" alt="" width="382" height="244")
+                                | Полезные видео
+
+                        .articles__col
+                            a.articles__item(href="article.html")
+                                picture
+                                    source(type="image/webp" srcset="img/tmp/articles-8@2x.webp 2x, img/tmp/articles-8.webp 1x")
+                                    source(type="image/jpeg" srcset="img/tmp/articles-8@2x.jpg 2x, img/tmp/articles-8.jpg 1x")
+                                    img.articles__img(src="img/tmp/articles-8.jpg" alt="" width="382" height="244")
+                                | Памятки пациентам
+
+        include includes/_footer
+
+        include includes/_svg
+
+        include includes/_modal
+
+        include includes/_scripts

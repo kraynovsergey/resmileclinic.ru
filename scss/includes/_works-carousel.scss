@@ -1,0 +1,31 @@
+.works-carousel {
+	overflow: hidden;
+
+	& .tns-ovh {
+		@media (max-width: 767px) {
+			overflow: visible;
+		}
+	}
+
+	&__init {
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	&__thumbs {
+		padding-top: 23px;
+
+		@media (max-width: 991px) {
+			padding-top: 0;
+		}
+	}
+
+	&__dots {
+		display: none;
+
+		@media (max-width: 991px) {
+			display: flex;
+		}
+	}
+}

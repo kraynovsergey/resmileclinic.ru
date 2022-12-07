@@ -1,0 +1,54 @@
+section.section.contacts
+    .container
+        h3.section__title Контакты
+
+        .contacts__cols
+            .contacts__col
+                .contacts__item
+                    .contacts__icon
+                        svg(width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-phone")
+                    .contacts__content
+                        a.contacts__title._link(href="tel:+74952555297")
+                            strong +7 (495) 255-52-97
+
+                .contacts__item
+                    .contacts__icon
+                        svg(width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-address")
+                    .contacts__content
+                        .contacts__title Адрес клиники:
+                        .contacts__text г. Москва , м. Бутрыская Огородный пр-д 19к2
+
+                .contacts__item
+                    .contacts__icon
+                        svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-schedule")
+                    .contacts__content
+                        .contacts__title График работы:
+                        .contacts__text Ежедневно 10:00-21:00
+
+                .contacts__item
+                    .contacts__icon
+                        svg(width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            use(xlink:href="#svg-email")
+                    .contacts__content
+                        .contacts__title Email
+                        a.contacts__text._link(href="mailto:info@dentalroott.ru") info@dentalroott.ru
+
+                .contacts__item
+                    .contacts__content
+                        .contacts__title Как добраться
+                        .contacts__controls
+                            button.contacts__control(type="button" data-src="#modal-car" data-fancybox)
+                                svg(width="30" height="14" viewBox="0 0 30 14" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-auto")
+                                | на автомобиле
+
+                            button.contacts__control(type="button" data-src="#modal-bus" data-fancybox)
+                                svg(width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#svg-train")
+                                | на общественном транспорте
+
+            .contacts__col
+                script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98acf8cd34a6279121151b328b8c91028e3025d08d9d5bd9bd6205d9d97bd51c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false")
